@@ -12,7 +12,7 @@
     <script>
         //1. Car and Cat
         pattern1 = /car|cat/
-        text1 = "car cat"
+        text1 = "car and cat"
         result1 = pattern1.test(text1);
         console.log(result1);
 
@@ -36,12 +36,12 @@
 
         //5. A whitespace character followed by a period, comma, colon, or semicolon:
         pattern5 = /\s[.,;:]/
-        text5 = ".,:;"
+        text5 = " .,:;"
         result5 = pattern5.test(text5);
         console.log(result5);
 
         //6.A word longer than six letters:
-        pattern6 = /\b\w{7,}\b/
+        pattern6 = /\w{7,}/
         text6 = "mrexpendible"
         result6 = pattern6.test(text6);
         console.log(result6);
