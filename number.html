@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Again | Regular Expression</title>
+</head>
+
+<body>
+    <script>
+        // Get inputs from user
+        let inputString = prompt("Please Enter a Number to check if Its a Javascript Number");
+
+        // Regular expression pattern to match JavaScript-style numbers
+        let numberPattern = /^[-+]?(\d+(\.\d*)?|\.\d+)([eE][-+]?\d+)?$/;
+        let matches = numberPattern.test(inputString);
+
+        //test if Valid or Not
+        if (matches === true) {
+            alert(`${inputString} is Valid`)
+        }
+        else {
+            alert(`${inputString} is not a Valid Javascript number`)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Golf | assignment</title>
+</head>
+
+<body>
+    
+    <script>
+        //1. Car and Cat
+        pattern1 = /car|cat/
+        text1 = " car cat"
+        result1 = pattern1.test(text1);
+        console.log(result1);
+
+        //2. pop and prop
+        pattern2 = /pr?op/
+        text2 = " pop prop"
+        result2 = pattern2.test(text2);
+        console.log(result2);
+
+        //3. ferret, ferry, and ferrari:
+        pattern3 = /ferr(et|y|ari)/
+        text3 = " ferret ferry ferrari"
+        result3 = pattern3.test(text3);
+        console.log(result3);
+
+        //4. Any word ending in ious:
+        pattern4 = /\b\w+ious\b/
+        text4 = " tedious"
+        result4 = pattern4.test(text4);
+        console.log(result4);
+
+        //5. A whitespace character followed by a period, comma, colon, or semicolon:
+        pattern5 = /\s[.,;:]/
+        text5 = " .,:;"
+        result5 = pattern5.test(text5);
+        console.log(result5);
+
+        //6.A word longer than six letters:
+        pattern6 = /\b\w{7,}\b/
+        text6 = "mrexpendible"
+        result6 = pattern6.test(text6);
+        console.log(result6);
+
+
+        //7. A word without the letter e (or E):
+        pattern7 = /\b[^eE\s]+\b/
+        text7 = "musa"
+        result7 = pattern7.test(text7);
+        console.log(result7);
+
+    </script>
+</body>
+
+</html>

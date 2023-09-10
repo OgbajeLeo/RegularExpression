@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote | Regular Expression</title>
+</head>
+<body>
+ <script>
+    let text = "He said, 'I don't like this.' She replied, 'Aren't you curious?'";
+    //Define a regular expression pattern to identify dialogue quotes
+    const pattern = /(^|\W)'|'(\W]$)/g
+
+    result = text.replace(pattern, '$1"$2')
+    console.log(result);
+
+ </script>   
+</body>
+</html>
