@@ -9,7 +9,7 @@ body {
 /* Basic styling for the form container */
 .form-container {
     text-align: center;
-    width: 400px;
+    width: 250px;
     margin: 0px auto;
     padding: 30px;
     border: 1px solid #ccc;
@@ -76,5 +76,5 @@ body {
 span {
     color: chartreuse;
     font-weight: 900;
-    font-size: x-large;
+    font-size: 18px;
 }
